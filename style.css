@@ -9,6 +9,24 @@ body{
     margin: 0px;
 }
 
+.esteemed_clients{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    /*border : 2px solid;*/
+    align-content: center ;
+    align-self: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.client_icon{
+   /* border: 2px solid;*/
+    margin: 20px;
+    width: match-parent;
+}
+
 
 .grid-container{
     justify-content: center;
@@ -139,11 +157,11 @@ input[type=submit] {
     cursor: pointer;
 
 button{
-    border-radius: 25px;
+    border-radius: 25%;
     border: 2px solid red;
     color: red;
     stroke-width: 3px;
-    width: 100%
+    width: 100%;
 }
 
 input:hover{
@@ -153,3 +171,5 @@ input:hover{
     text-align: left;
     margin: 10px;
 }
+
+
