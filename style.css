@@ -1,3 +1,13 @@
+*{
+    font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 #intro{
     background-image: url(https://images.unsplash.com/photo-1490013708732-dcbed0e5e325?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     width:match-parent;
@@ -54,7 +64,7 @@ body{
 }
 #header{
     text-align: center;
-    color:brown;
+    color:#c4161c;;
 }
 
 .left{
@@ -97,16 +107,16 @@ img{
 
 h4{
     text-align: center;
-    color: gray;
+    color: #54646c;
 }
 h5{
     text-align: center;
-    color: gray;
+    color: #54646c;
 }
 
 #footer{
     width: match-parent;
-    background-color: darkslategrey;
+    background-color: #54646c;
     text-align: center;
     color: gray;
     padding-top: 10px;
@@ -187,7 +197,7 @@ input[type = textarea]{
 }
 
 input[type=submit] {
-    background-color: red;
+    background-color: #c4161c;;
     color: white;
     stroke-width: 5px;
     padding: 12px 20px;
@@ -205,7 +215,7 @@ button{
 }
 
 input:hover{
-    border: 2px solid red;
+    border: 2px solid #c4161c;;
 }
 .query-field{
     text-align: left;
