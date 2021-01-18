@@ -6,6 +6,7 @@ body{
     background: #fff;
     font-size: 16px;
     line-height: 1.7;
+    
 }
 
 .intro{
@@ -33,7 +34,7 @@ body{
 
 
     justify-content: center;
-   display: flex;
+    display: flex;
     flex-flow: row wrap;
     row-gap: 50px;
     column-gap: 50px;
@@ -64,6 +65,7 @@ body{
     ". main sidebar"
     "footer . .";*/
 }
+
 .header{
     text-align: center;
     color:#c4161c;
@@ -92,7 +94,7 @@ body{
 }
 
 .header hr{
-    height: 5px;
+    height: 2px;
     background-color: #c4161c;
     color: #c4161c;
     border-width: 0px;
@@ -159,7 +161,10 @@ h1{
     width: 30%;
     
 }
-
+.service-btn{
+    justify-content: center;
+    width: match-parent;
+}
 .solutions button{
     background-color: #ffff; /* Green */
     border: 3px solid #c4161c;
@@ -170,11 +175,16 @@ h1{
     display: inline-block;
     font-size: 16px;
 }
-#container{
-    display: flex;
+.container{
+    display: inline-block;
     justify-content: center;
 }
-.services button, .value_propositions button{
+
+.container button{
+    width: match-parent;
+    align-content: space-around;
+}
+ button, .value_propositions button{
     background-color: #ffff; /* Green */
     border: 3px solid #c4161c;
     color: #c4161c;
@@ -183,8 +193,9 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    width: match-parent;
 }
-.services button:hover, .solutions button:hover, .value_propositions button:hover{
+ button:hover, .solutions button:hover, .value_propositions button:hover{
     background-color: #c4161c; /* Green */
     border: 3px solid #c4161c;
     color: #ffff;
@@ -252,6 +263,7 @@ h5{
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     margin: 0 -16px;
+    align-items: flex-start;
     justify-content: left;
   }
   .col-50 {
@@ -266,7 +278,12 @@ h5{
 }*/
 form{
     align-content: left;
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+}
+
+form h4:hover{
+    color:#c4161c;
 }
 
 input[type=text]{
@@ -303,7 +320,7 @@ input:hover{
     border: 2px solid #c4161c;;
 }
 .query-field{
-    text-align: left;
+    
     margin: 10px;
 }
 
