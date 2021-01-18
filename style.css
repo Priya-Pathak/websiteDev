@@ -94,11 +94,17 @@ h1{
   
 }
 .services{
-  
     display: flex;
+    flex-wrap: wrap;
 }
 
-
+.service{
+    /*padding: 20px;*/
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    
+}
 img{
     width: 200px;
     height: 200px;
@@ -143,26 +149,18 @@ h5{
     row-gap: 50px;
     column-gap: 50px;
     background-color: azure;
-    align-content: center;
-
-
-    
+    align-content: center;  
 }
 .value_propositon{
     align-content: center;
     text-align: center;
     width: 30%;
 }
-.service{
-    
-   
-    padding: 20px;
-    align-content: center;
-    text-align: center;
-    width: 30%;
-    
-}
 
+.technology_expertise{
+    display: flex;
+    flex-wrap: wrap;
+}
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
