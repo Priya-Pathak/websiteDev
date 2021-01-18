@@ -166,9 +166,18 @@ h4{
 form{
     align-content: center;
 }
-.query-field{
 
+input[type=text]{
+    width : 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
+
+input[type = textarea]{
+    width: 100%;
+}
+
 input[type=submit] {
     background-color: red;
     color: white;
