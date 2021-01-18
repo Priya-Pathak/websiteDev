@@ -10,14 +10,21 @@ body{
 }
 
 .esteemed_clients{
-    margin-top: 10px;
+    /*margin-top: 10px;
     display: flex;
     justify-content: center;
     /*border : 2px solid;*/
-    align-content: center ;
+    /*align-content: center ;
     align-self: center;
     align-items: center;
-    text-align: justify;
+    text-align: justify;*/
+
+
+    justify-content: center;
+   display: flex;
+    flex-flow: row wrap;
+    row-gap: 50px;
+    column-gap: 50px;
 }
 
 
@@ -114,6 +121,22 @@ h4{
     
 }
 
+.value_propositions{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+     
+    align-content: center;
+
+}
+.value_propositon{
+    align-content: center;
+    text-align: center;
+}
 .service{
     
     border: 2px solid black;
