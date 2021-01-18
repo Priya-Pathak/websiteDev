@@ -8,11 +8,13 @@ body{
     line-height: 1.7;
 }
 
-#intro{
+.intro{
     background-image: url(https://images.unsplash.com/photo-1490013708732-dcbed0e5e325?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     width:match-parent;
     height: 800px;
+    padding-top: 0px;
     display: flex;
+    margin-top: 0px;
 }
 
 body{
@@ -62,20 +64,53 @@ body{
     ". main sidebar"
     "footer . .";*/
 }
-#header{
+.header{
     text-align: center;
     color:#c4161c;
+    padding-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-size-adjust: 16px;
+    height: fit-content;
+    background-color: #fff;
+}
+
+.left h1{
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    padding: 10px;
+}
+.left p{
+    margin: 0px;
+    font-size: ;
+}
+.header h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+}
+
+.header hr{
+    height: 5px;
+    background-color: #c4161c;
+    color: #c4161c;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .left{
     width: max-content;
     color: white;
+    margin: 10px;
+    padding:10px;
 }
 .right{
-    background-color: azure;
+    background-color: rgba(0,0,0,0);
     justify-content: center;
     text-align: center;
-   
+    color: #fff;
     margin: 10px;
     padding:10px;
     
@@ -217,19 +252,21 @@ h5{
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     margin: 0 -16px;
+    justify-content: left;
   }
   .col-50 {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
     padding: 0 16px;
   }  
+
 /*.queries{
     display: flex;
     align-content: center;
 }*/
 form{
-    align-content: center;
-    background-color: azure;
+    align-content: left;
+    background-color: rgba(0,0,0,0)
 }
 
 input[type=text]{
