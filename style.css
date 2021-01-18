@@ -69,7 +69,6 @@ body{
 
 .left{
     width: max-content;
-   
     color: white;
 }
 .right{
@@ -84,18 +83,29 @@ body{
 }
 h1{
     text-align: center;
-    
+}
+
+.solutions-heading, .value-proposition-heading{
+    background-color: azure;
+    margin: 0px;
+    padding: 0px;
 }
 
 .solutions{
-    
     background-color: azure;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10px;
   
 }
 
+.solutions-heading h4, .value-proposition-heading h4{
+    margin-bottom: 0px;
+}
+
 .solution{
+    margin-top: 10px;
+    background-color: azure;
     align-content: center;
     text-align: center;
     width: 30%;
@@ -189,6 +199,7 @@ h5{
     column-gap: 50px;
     background-color: azure;
     align-content: center;  
+    padding-bottom: 10px;
 }
 .value_propositon{
     align-content: center;
@@ -242,7 +253,7 @@ input[type=submit] {
     width: 50%;
     border-radius: 25px;
     cursor: pointer;
-
+}
 .right button{
     border-radius: 25%;
     border: 2px solid red;
