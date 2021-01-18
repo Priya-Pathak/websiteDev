@@ -123,7 +123,6 @@ h4{
 
 .value_propositions{
     display: flex;
-    flex-flow: row;
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
@@ -132,10 +131,14 @@ h4{
     background-color: azure;
     align-content: center;
 
+
+    
 }
 .value_propositon{
     align-content: center;
     text-align: center;
+    width: 30%;
+    border: 2px solid black;
 }
 .service{
     
