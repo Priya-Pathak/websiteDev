@@ -58,7 +58,8 @@ $(function(){
     }
     function check_number(){
         var phone = $("#pnumber").val(),
-        intRegex = '\d{5}([- ]*)\d{6}';
+        //intRegex = '\d{5}([- ]*)\d{6}';
+        intRegex = '^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$';
         if((phone.length < 10) || (!intRegex.test(phone)))
         {
             $("#error-message-number").html("Please enter a valid phone number");
@@ -96,6 +97,10 @@ $(function(){
         check_number();
 
         if(error_name == false && error_message_msg == false && error_email == false && error_number == false ){
+            $("#error-message-msg").hide();
+            $("#error-message-number").hide();
+            $("#error-message-email").hide();
+            $("#error-message-name").hide();
             return true;
         }
         else{
