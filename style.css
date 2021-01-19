@@ -256,6 +256,12 @@ h5{
     align-content: center;  
     padding-bottom: 10px;
 }
+
+#registration-form span{
+    color: orangered;
+    font-size: small;
+
+}
 .value_propositon{
     align-content: center;
     text-align: center;
@@ -292,7 +298,7 @@ form{
 }
 
 form h4:hover{
-    color:#c4161c;
+    color: azure;
 }
 
 input[type=text]{
