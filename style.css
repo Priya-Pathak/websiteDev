@@ -9,6 +9,15 @@ body{
     
 }
 
+.service-btn{
+    text-align: center;
+    padding-top : 50px;
+}
+.btn-centre-solution{
+    text-align: center;
+    background-color: azure;
+    padding-bottom: 30px;
+}
 .intro{
     background-image: url(https://images.unsplash.com/photo-1490013708732-dcbed0e5e325?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     width:match-parent;
@@ -307,6 +316,10 @@ input[type=submit] {
     width: 50%;
     border-radius: 25px;
     cursor: pointer;
+}
+
+#btn-centre-form{
+    text-align: center
 }
 .right button{
     border-radius: 25%;
