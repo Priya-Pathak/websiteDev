@@ -32,11 +32,19 @@ $(function(){
 
     function check_username(){
         var username_length = $("#uname").val().length;
-        if(username_length < 5 || username_length > 20){
+        var regex = /^(?![\s.]+$)[a-zA-Z\s.]*$/;
+        if (!regex.test($("#uname").val())){
+            $("#error-message-name").html("User name should only consist of alphabets");
+            $("#error-message-name").show();
+            error_name = true;
+        }
+
+        else  if(username_length < 5 || username_length > 20){
             $("#error-message-name").html("User name Should be between 5-20 characters");
             $("#error-message-name").show();
             error_name = true;
         }
+
         else{
             $("#error-message-name").hide();
             error_name = false;
