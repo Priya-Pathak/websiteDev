@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+    <?php
+        
+        if(isset($_POST['submit'])){
+            $userName = $_POST['uname'];
+            $email = $_POST['email'];
+            $pnumber = $_POST['pnumber'];
+            $msg = $_POST['msg'];
+            if($userName!='' && $email != '' && $pnumber != '' && $msg != ''){
+
+            }
+            else{
+                header("location:index.html");
+            }
+            
+        }
+
+        else{
+            header("location:index.html");
+        } 
+        
+        ?>
         
         
         <link rel="stylesheet" href="register.css">
@@ -37,22 +59,6 @@
             <h5>© 2021 Datamatics Global Services Inc.</h5>
         </div>
 
-        <?php
         
-        // if(isset($_POST['submit'])){
-        //     $userName = $_POST['uname'];
-        //     $email = $_POST['email'];
-        //     $pnumber = $_POST['pnumber'];
-        //     $msg = $_POST['msg'];
-        //     echo $userName."<br>";
-        //     echo $email."<br>";
-        //     echo $msg."<br>";
-        // }
-
-        // else{
-        //     echo "<br>form not submitter<br>";
-        // } 
-        
-        ?>
     </body>
 </html>
