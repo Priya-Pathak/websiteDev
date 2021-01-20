@@ -67,9 +67,11 @@ $(function(){
     function check_number(){
         var phone = $("#pnumber").val();
         var phoneLength = $("#pnumber").val().length;
-        intRegex0 = /[A-Za-z]+/;
-        intRegex1 = /\d{10}$/;
-        intRegex2 = /^"+91"[-/s]\d{10}$/;
+        //intRegex0 = /[A-Za-z]+/;
+        intRegex0 = /[a-zA-Z!%~`#&*()_=/-/+|.?<>'";:@^]/;
+        intRegex1 = /\d{10}$/; //The following condition checks for basic plain 10 digit number that should not be text
+        intRegex2 = /^\+91[-\s]?\d{10}$/; //The following condition checks for numbers starting with +91-9897904890 && +91 9897904890
+        intRegex3 = /^0[-\s]?\d{10}$/; //Same as above but with 0
         //intRegex = / ^(a-zA-Z?![\s.]+$)[^0[- ]\d{10}$]/|/ ^(a-zA-Z?![\s.]+$)[[^A-Za-z]^+91[-/s]\d{10}]/;
         //intRegex = '^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$';
         if((phoneLength<10))
@@ -78,12 +80,14 @@ $(function(){
             $("#error-message-number").show();
             error_number = true;
         }
-        //The following condition checks for basic plain 10 digit number that should not be text
-        else if((!intRegex1.test(phone)) || intRegex0.test(phone) ||  phoneLength > 10){
+       
+        else if((!intRegex1.test(phone) || intRegex0.test(phone) ||  phoneLength > 10) && (intRegex0.test(phone)|| !intRegex2.test(phone))  && (intRegex0.test(phone)|| !intRegex3.test(phone))){
+            // Number Type 1
             $("#error-message-number").html("Please enter a valid number");
             $("#error-message-number").show();
             error_number = true;
         }
+        
         else{
             $("#error-message-number").hide();
             error_number = false;
