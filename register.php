@@ -11,7 +11,7 @@
         <div class="header">
             <hr>
             <h1>XYZ</h1>
-            <hr>
+            
         </div>
         <div class = "main">
        
@@ -25,7 +25,10 @@
         
         </div>
         <div class = "right">
-            <img src="https://cdn.pixabay.com/photo/2015/07/06/14/57/speech-833379__340.png">
+            <!-- <img src="https://cdn.pixabay.com/photo/2015/07/06/14/57/speech-833379__340.png"> -->
+            <img src="https://c.tenor.com/44LDvTiDM8cAAAAj/thanks-a-ton-thanks-a-bunch.gif">
+            <h3>Every note from you adds value to us</h3>
+            <h1>Thank You!!<h1>
         </div>
         
 
@@ -36,19 +39,19 @@
 
         <?php
         
-        if(isset($_POST['submit'])){
-            $userName = $_POST['uname'];
-            $email = $_POST['email'];
-            $pnumber = $_POST['pnumber'];
-            $msg = $_POST['msg'];
-            echo $userName."<br>";
-            echo $email."<br>";
-            echo $msg."<br>";
-        }
+        // if(isset($_POST['submit'])){
+        //     $userName = $_POST['uname'];
+        //     $email = $_POST['email'];
+        //     $pnumber = $_POST['pnumber'];
+        //     $msg = $_POST['msg'];
+        //     echo $userName."<br>";
+        //     echo $email."<br>";
+        //     echo $msg."<br>";
+        // }
 
-        else{
-            echo "<br>form not submitter<br>";
-        } 
+        // else{
+        //     echo "<br>form not submitter<br>";
+        // } 
         
         ?>
     </body>
