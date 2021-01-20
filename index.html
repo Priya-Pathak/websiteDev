@@ -38,13 +38,14 @@ Talk to us today to amplify your business productivity with mobile apps that are
             <div class="right">
                 <h2>Submit An Inquiry</h2>
                 <hr>
-                <form action="" method="POST" id="registration-form" >
+                <form action="register.php" method="POST" id="registration-form" name = "register">
                     <div class="queries">
 
                     <div class="row">
                         <div class="col-50">
                           <label for="user_name">User Name</label> 
                           <input type="text" id="uname" name="uname">
+                          <echo $uname;>
                           <span id="error-message-name"></span>
                         </div>
 
@@ -74,7 +75,7 @@ Talk to us today to amplify your business productivity with mobile apps that are
                    <h4> By submitting this form, you agree to receive marketing communications from XYZ. For more information, please see our privacy policy.
                     </h4>
                     <div id = "btn-centre-form">
-                    <input type="submit" id="submit-btn" value="Get in Touch">
+                    <input type="submit" id="submit-btn" value="Get in Touch" name="submit">
                     </div>
                     </form>
                 
