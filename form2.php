@@ -45,7 +45,7 @@ Form
 
 <form action="form3.php" method="POST">
     <div class="field">
-    <input type="date" id="dob" name="dob" cols="50">
+    <input type="date" id="dob" name="dob" cols="50" placeholder="01/01/2000" autocomplete="off" required>
     </div>
     <div class="container">
     <input type="submit" value="Submit" name="submit">

@@ -12,7 +12,7 @@ if (isset($_POST['phn'])){
     }
 }
     else{
-        header("location: form.php");
+        header("location: form3.php");
     }
 
 ?>
@@ -45,7 +45,7 @@ Form
 
 <form action="form5.php" method="POST">
     <div class="field">
-    <label style={font-size: 20px;}>Gender:</label>
+    <label style="font-size: 20px;">Gender:</label>
     <hr>
     <br>
     <input type="radio" id="male" name="gender" value="male">

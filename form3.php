@@ -12,7 +12,7 @@ if (isset($_POST['dob'])){
     }
 }
     else{
-        header("location: form.php");
+        header("location: form2.php");
     }
 
 ?>
@@ -45,7 +45,7 @@ Form
 
 <form action="form4.php" method="POST">
     <div class="field">
-    <input type="tel" id="phn" name="phn" cols="50" pattern="[0-9]{10}" placeholder="Contact Number">
+    <input type="tel" id="phn" name="phn" cols="50" pattern="[0-9]{10}" placeholder="Contact Number" autocomplete="off" required>
     </div>
     <div class="container">
     <input type="submit" value="Submit" name="submit">
