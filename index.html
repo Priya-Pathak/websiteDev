@@ -56,18 +56,18 @@ Talk to us today to amplify your business productivity with mobile apps that are
 <h2>Submit An Inquiry</h2>
 <hr>
 
-<form action="register.php" method="POST" id="registration-form" name="register">
+<form action="register.php" method="POST" id="registration-form" name="register" autocomplete="off">
 <div class="queries">
 <div class="row">
   <div class="col-50">
   <label for="user_name">User Name</label> 
-  <input type="text" id="uname" name="uname">
+  <input type="text" id="uname" name="uname" autofocus>
   <echo $uname;>
   <span id="error-message-name"></span>
   </div>
   <div class="col-50">
   <label for="email">Email</label>
-  <input type="text" id="email" name="email">
+  <input type="text" id="email" name="email" autofocus>
   <span id="error-message-email"></span>
   </div>
 </div>
@@ -75,12 +75,12 @@ Talk to us today to amplify your business productivity with mobile apps that are
 <div class="row">
   <div class="col-50">
   <label for="phone">Phone-Number</label>
-  <input type="text" id="pnumber" name="pnumber">
+  <input type="text" id="pnumber" name="pnumber" autofocus>
   <span id="error-message-number"></span>
   </div>
   <div class = "col-50">
   <label for="message">Message</label>
-  <input type="textarea" id="message" name="msg">
+  <input type="textarea" id="message" name="msg" autofocus>
   <span id="error-message-msg"></span>
   </div>
 </div>
@@ -300,7 +300,9 @@ functionalities with reusable code and APIs for reducing processing power
 
 
 <div id="footer">
-<h5>© 2021 XYZ Demo Services Inc.</h5>
+<h5>
+© 2021 XYZ Demo Services Inc.
+</h5>
 </div>
  
 </body>
