@@ -5,12 +5,16 @@ session_start();
 if (isset($_POST['gender'])){
     if(empty($_POST['gender'])){
         $_SESSION['error'] = "Please fill the field again";
-        header("location: form.php");
+        header("location: form4.php");
     }
     else{
-        //header("location: form.php");
+        $_SESSION['gender'] = $_POST['gender'];
     }
 }
+    else{
+        header("location: form4.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -30,14 +34,26 @@ Form
 <body>
 <div class = "header"><h1>F &nbsp; O &nbsp; R &nbsp; M </h1></div>
 
-<div class="container">
-<h1>Hi, <?php echo "<h4>".$_SESSION['name']."</h4>";?></h1>
+<span id="error">
+ <!---- Initializing Session for errors --->
+ <?php
+ if (!empty($_SESSION['error'])) {
+ echo $_SESSION['error'];
+ unset($_SESSION['error']);
+ }
+ ?>
 
-<h4>We have received info provided by you</h4>
-
-</div>
+<form action="form6.php" method="POST">
+    <div class="field">
+    <br>
+    <textarea name="message" rows=10 cols=50 required>
+    </textarea>
+    </div>
+    <div class="container">
+    <input type="submit" value="Submit" name="submit">
+    </div>
+</form>
 </body>
 
 
 </html>
-

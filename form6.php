@@ -2,20 +2,21 @@
 session_start();
 
 
-if (isset($_POST['name'])){
-    if(empty($_POST['name'])){
+if (isset($_POST['message'])){
+    if(empty($_POST['message'])){
         $_SESSION['error'] = "Please fill the field again";
-        header("location: form.php");
+        header("location: form5.php");
     }
     else{
-        $_SESSION['name'] = $_POST['name'];
+        $_SESSION['message'] = $_POST['message'];
     }
 }
     else{
-        header("location: form.php");
+        header("location: form5.php");
     }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -43,9 +44,15 @@ Form
  }
  ?>
 
-<form action="form3.php" method="POST">
+<form action="form7.php" method="POST">
     <div class="field">
-    <input type="date" id="dob" name="dob" cols="50" placeholder="01/01/2000" autocomplete="off" required>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" required>
+    <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat">Fiat</option>
+     <option value="audi">Audi</option>
+    </select>
     </div>
     <div class="container">
     <input type="submit" value="Submit" name="submit">
